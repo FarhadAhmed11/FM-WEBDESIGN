@@ -7,8 +7,9 @@
   position: relative; }
 
 .nav {
-  background-color: rgba(255, 255, 255, 0.658);
-  color: var(--color-grey-dark-5); }
+  background-color: var(--color-grey-light-2);
+  color: var(--color-grey-dark-5);
+  z-index: 99; }
   .nav__container {
     max-width: 120rem;
     margin: 0 auto;
@@ -25,6 +26,11 @@
     padding: 1rem;
     border: 2px solid var(--color-grey-dark-5);
     border-radius: 3px; }
+    .nav__logo-icon {
+      height: 2.2rem;
+      width: 2.2rem;
+      margin-right: .7rem;
+      transform: translateY(3px); }
   .nav__list {
     list-style: none;
     display: flex; }
@@ -40,10 +46,10 @@
 .banner {
   position: absolute;
   top: 50%;
-  left: 12.5%;
+  left: 12%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.6);
-  color: var(--color-grey-light-4);
+  color: var(--color-grey-light-2);
   width: 50%; }
   .banner__container {
     padding: 5rem 3rem; }
@@ -55,6 +61,134 @@
   .banner__btn--primary {
     margin-right: 3rem;
     font-weight: 500; }
+
+.services {
+  padding: 7rem 0;
+  background-image: url(../img/bg-services.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center; }
+  .services__container {
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+  .services__box {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 3rem 1rem;
+    margin: 2rem;
+    color: var(--color-grey-dark-5);
+    text-align: center;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    transition: transform .2s;
+    cursor: pointer;
+    backface-visibility: hidden; }
+    .services__box-icon {
+      fill: var(--color-primary);
+      height: 8rem;
+      width: 8rem; }
+    .services__box-text {
+      font-size: 1.6rem;
+      font-weight: 400; }
+  .services__box:hover {
+    transform: translateY(-1.5rem) scale(1.05);
+    backface-visibility: hidden; }
+
+.growsales {
+  height: 40rem;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg-growsales-2.jpg);
+  background-size: cover;
+  color: var(--color-grey-light-2);
+  position: relative; }
+  .growsales__container {
+    max-width: 120rem;
+    margin: 0 auto; }
+  .growsales__text {
+    width: 45%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.customers {
+  padding: 7rem 0;
+  text-align: center; }
+  .customers__container {
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+  .customers__box {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    margin: 2rem;
+    border: 1px solid var(--color-grey-light-3);
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
+    text-align: left; }
+  .customers__img {
+    height: 6rem;
+    width: 15rem;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    margin-right: 1.25rem; }
+    .customers__img--1 {
+      background-image: url(../img/customer-1.jpg); }
+    .customers__img--2 {
+      background-image: url(../img/customer-2.jpg); }
+
+.form {
+  padding: 7rem 0;
+  background-color: var(--color-grey-light-5); }
+  .form__container {
+    max-width: 120rem;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 50%, transparent 50%), url(../img/bg-green.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1); }
+  .form__box {
+    width: 50%;
+    padding: 2.5rem 6rem; }
+  .form__group:not(:last-child) {
+    margin-bottom: 2.2rem; }
+  .form__input {
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 1.5rem 2rem;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-bottom: 3px solid transparent; }
+    .form__input:focus {
+      outline: none;
+      box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.1);
+      border-bottom: 3px solid var(--color-primary); }
+      .form__input:focus:invalid {
+        border-bottom: 3px solid var(--color-invalid); }
+    .form__input::-webkit-input-placeholder {
+      opacity: 0; }
+  .form__label {
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    margin-bottom: .5rem; }
+  .form__textarea {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 2.4rem; }
+    .form__textarea:focus {
+      outline: none;
+      box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.1); }
 
 *,
 *::after,
@@ -77,6 +211,23 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--color-grey-light-1); }
 
+.heading-1 {
+  font-size: 2.8rem;
+  text-transform: uppercase; }
+
+.heading-2 {
+  font-size: 2.6rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase; }
+  .heading-2--border {
+    display: inline-block;
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: .2rem; }
+
+.heading-3 {
+  font-size: 2rem;
+  font-weight: 500; }
+
 .heading-4--light {
   color: var(--color-grey-light-1); }
 
@@ -88,7 +239,7 @@ body {
   border-radius: 50px;
   text-transform: uppercase; }
   .btn--primary:link, .btn--primary:visited {
-    background-color: var(--color-grey-light-4);
+    background-color: var(--color-grey-light-2);
     color: var(--color-grey-dark-5);
     transition: all .3s; }
   .btn--primary:hover, .btn--primary:active {
@@ -99,7 +250,18 @@ body {
     transition: all .3s; }
   .btn--ghost:hover, .btn--ghost:active {
     background-color: var(--color-primary-dark);
-    border: 1px solid transparent; }
+    border: 1px solid var(--color-primary-dark); }
+  .btn--blue {
+    background-color: var(--color-primary-dark);
+    color: #fff;
+    border: none;
+    transition: all .3s;
+    font-size: inherit;
+    font-family: inherit;
+    border: 1px solid var(--color-primary-dark); }
+  .btn--blue:hover, .btn--blue:active {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary); }
 
 :root {
   --color-primary: #0f97e1;
@@ -116,6 +278,7 @@ body {
   --color-grey-dark-4: #333;
   --color-grey-dark-5: #182024;
   --color-grey-dark-6: #0a0e10;
+  --color-invalid: #cc3838;
   --shadow-dark: 0 2 6 rgba(0,0,0,.3);
   --shadow-light: 0 2 6 rgba(0,0,0,.06);
   --line: 1px solid var(--color-grey-light-3); }
