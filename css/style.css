@@ -9,7 +9,8 @@
 .nav {
   background-color: var(--color-grey-light-2);
   color: var(--color-grey-dark-5);
-  z-index: 99; }
+  z-index: 99;
+  padding: 0 2rem; }
   .nav__container {
     max-width: 120rem;
     margin: 0 auto;
@@ -35,7 +36,7 @@
     list-style: none;
     display: flex; }
   .nav__item {
-    margin-left: 4rem; }
+    margin-left: 3rem; }
   .nav__link, .nav__link:link, .nav__link:visited {
     padding-bottom: .8rem;
     border-bottom: 2px solid transparent;
@@ -45,14 +46,19 @@
 
 .banner {
   position: absolute;
-  top: 50%;
-  left: 12%;
+  top: 55%;
+  left: 0;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.6);
   color: var(--color-grey-light-2);
-  width: 50%; }
+  width: 100%;
+  padding: 0 2rem; }
   .banner__container {
-    padding: 5rem 3rem; }
+    max-width: 120rem;
+    margin: 0 auto; }
+  .banner__box {
+    padding: 3rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    max-width: 60%; }
   .banner__main {
     text-transform: uppercase; }
   .banner__paragraph {
@@ -63,7 +69,7 @@
     font-weight: 500; }
 
 .services {
-  padding: 7rem 0;
+  padding: 7rem 2rem;
   background-image: url(../img/bg-services.jpg);
   background-position: center;
   background-size: cover;
@@ -101,7 +107,8 @@
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg-growsales-2.jpg);
   background-size: cover;
   color: var(--color-grey-light-2);
-  position: relative; }
+  position: relative;
+  padding: 0 2rem; }
   .growsales__container {
     max-width: 120rem;
     margin: 0 auto; }
@@ -112,7 +119,7 @@
     transform: translateY(-50%); }
 
 .customers {
-  padding: 7rem 0;
+  padding: 7rem 2rem;
   text-align: center; }
   .customers__container {
     max-width: 120rem;
@@ -141,7 +148,7 @@
       background-image: url(../img/customer-2.jpg); }
 
 .form {
-  padding: 7rem 0;
+  padding: 7rem 2rem;
   background-color: var(--color-grey-light-5); }
   .form__container {
     max-width: 120rem;
@@ -185,7 +192,7 @@
     border-radius: 3px;
     background-color: rgba(255, 255, 255, 0.8);
     border: none;
-    font-size: 2.4rem; }
+    font-size: 2rem; }
     .form__textarea:focus {
       outline: none;
       box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.1); }
@@ -210,6 +217,10 @@ body {
   line-height: 1.6;
   font-family: 'Montserrat', sans-serif;
   background-color: var(--color-grey-light-1); }
+
+#current {
+  border: 2px solid var(--color-primary);
+  padding: .8rem; }
 
 .heading-1 {
   font-size: 2.8rem;
@@ -237,7 +248,8 @@ body {
 .btn {
   padding: 1.5rem 3.2rem;
   border-radius: 50px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  display: inline-block; }
   .btn--primary:link, .btn--primary:visited {
     background-color: var(--color-grey-light-2);
     color: var(--color-grey-dark-5);
