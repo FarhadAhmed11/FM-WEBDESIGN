@@ -28,9 +28,9 @@
   @media only screen and (max-width: 68.75em) {
     .header {
       background-position: right; } }
-  @media only screen and (orientation: portrait) and (min-width: 40.625em) {
+  @media only screen and (max-width: 56.25em) {
     .header {
-      height: 80vh; } }
+      height: 70vh; } }
 
 .nav {
   background-color: var(--color-grey-light-1);
@@ -79,11 +79,11 @@
     @media only screen and (max-width: 26.25em) {
       .nav__list {
         margin-top: 3rem; } }
-    @media only screen and (max-width: 24.375em) {
-      .nav__list {
-        display: none; } }
   .nav__item {
     margin-left: 3rem; }
+    @media only screen and (max-width: 40.625em) {
+      .nav__item {
+        margin-left: 0; } }
   .nav__link, .nav__link:link, .nav__link:visited {
     padding-bottom: .8rem;
     border-bottom: 2px solid transparent;
@@ -93,12 +93,17 @@
 
 .banner {
   position: absolute;
-  top: 55%;
+  top: 54%;
   left: 0;
   transform: translateY(-50%);
   color: var(--color-grey-light-2);
   width: 100%;
   padding: 0 2rem; }
+  @media only screen and (max-width: 26.25em) {
+    .banner {
+      position: static;
+      transform: translateY(0);
+      padding: 0; } }
   .banner__container {
     max-width: 120rem;
     margin: 0 auto; }
@@ -110,16 +115,14 @@
     flex-direction: column; }
     @media only screen and (max-width: 56.25em) {
       .banner__box {
-        width: 100%; } }
+        width: 100%;
+        padding: 6rem 2rem; } }
   .banner__main {
     font-size: 3rem;
     text-transform: uppercase; }
   .banner__paragraph {
     font-size: 1.6rem;
     color: var(--color-grey-light-5); }
-    @media only screen and (max-width: 56.25em) {
-      .banner__paragraph {
-        font-size: 2.5rem; } }
   .banner__btn--primary {
     margin-right: 3rem;
     font-weight: 500; }
@@ -129,7 +132,7 @@
     @media only screen and (max-width: 26.25em) {
       .banner__btn--primary {
         margin-right: 0;
-        margin-bottom: 1rem; } }
+        margin-bottom: 2rem; } }
   @media only screen and (max-width: 26.25em) {
     .banner__btn {
       display: flex;
@@ -194,6 +197,9 @@
   color: var(--color-grey-light-2);
   position: relative;
   padding: 0 2rem; }
+  @media only screen and (max-width: 68.75em) {
+    .growsales {
+      background-position: right; } }
   .growsales__container {
     max-width: 120rem;
     margin: 0 auto; }
@@ -264,9 +270,7 @@
     padding: 2.5rem 6rem; }
     @media only screen and (max-width: 40.625em) {
       .form__box {
-        width: 100%; } }
-    @media only screen and (max-width: 24.375em) {
-      .form__box {
+        width: 100%;
         padding: 2.5rem; } }
   .form__group:not(:last-child) {
     margin-bottom: 2.2rem; }
@@ -354,6 +358,9 @@
     .footer__bottom-left {
       text-transform: uppercase;
       letter-spacing: .2rem; }
+      @media only screen and (max-width: 24.375em) {
+        .footer__bottom-left {
+          margin-bottom: 1rem; } }
     .footer__bottom-right a {
       margin-left: 1rem; }
 
@@ -388,7 +395,8 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   font-family: 'Montserrat', sans-serif;
-  background-color: var(--color-grey-light-1); }
+  background-color: var(--color-grey-light-1);
+  overflow: hidden; }
 
 #current {
   border: 2px solid var(--color-primary);
@@ -428,10 +436,7 @@ hr {
   display: inline-block; }
   @media only screen and (max-width: 40.625em) {
     .btn {
-      padding: 1.2rem 2rem; } }
-  @media only screen and (max-width: 26.25em) {
-    .btn {
-      padding: 2rem 3.2rem; } }
+      padding: 1.5rem 2rem; } }
   .btn--primary:link, .btn--primary:visited {
     background-color: var(--color-grey-light-2);
     color: var(--color-grey-dark-5);
