@@ -93,7 +93,7 @@
 
 .banner {
   position: absolute;
-  top: 54%;
+  top: 55%;
   left: 0;
   transform: translateY(-50%);
   color: var(--color-grey-light-2);
@@ -117,6 +117,9 @@
   .banner__paragraph {
     font-size: 1.6rem;
     color: var(--color-grey-light-5); }
+    @media only screen and (max-width: 56.25em) {
+      .banner__paragraph {
+        font-size: 2.5rem; } }
   .banner__btn--primary {
     margin-right: 3rem;
     font-weight: 500; }
@@ -191,9 +194,6 @@
   color: var(--color-grey-light-2);
   position: relative;
   padding: 0 2rem; }
-  @media only screen and (max-width: 68.75em) {
-    .growsales {
-      background-position: right; } }
   .growsales__container {
     max-width: 120rem;
     margin: 0 auto; }
@@ -429,6 +429,9 @@ hr {
   @media only screen and (max-width: 40.625em) {
     .btn {
       padding: 1.2rem 2rem; } }
+  @media only screen and (max-width: 26.25em) {
+    .btn {
+      padding: 2rem 3.2rem; } }
   .btn--primary:link, .btn--primary:visited {
     background-color: var(--color-grey-light-2);
     color: var(--color-grey-dark-5);
