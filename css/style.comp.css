@@ -28,9 +28,9 @@
   @media only screen and (max-width: 68.75em) {
     .header {
       background-position: right; } }
-  @media only screen and (orientation: portrait) and (min-width: 40.625em) {
+  @media only screen and (max-width: 56.25em) {
     .header {
-      height: 80vh; } }
+      height: 65vh; } }
   @media only screen and (max-width: 26.25em) {
     .header {
       height: auto; } }
@@ -84,6 +84,9 @@
         margin-top: 3rem; } }
   .nav__item {
     margin-left: 3rem; }
+    @media only screen and (max-width: 40.625em) {
+      .nav__item {
+        margin-left: 0; } }
   .nav__link, .nav__link:link, .nav__link:visited {
     padding-bottom: .8rem;
     border-bottom: 2px solid transparent;
@@ -132,7 +135,7 @@
     @media only screen and (max-width: 26.25em) {
       .banner__btn--primary {
         margin-right: 0;
-        margin-bottom: 1rem; } }
+        margin-bottom: 2rem; } }
   @media only screen and (max-width: 26.25em) {
     .banner__btn {
       display: flex;
@@ -270,9 +273,7 @@
     padding: 2.5rem 6rem; }
     @media only screen and (max-width: 40.625em) {
       .form__box {
-        width: 100%; } }
-    @media only screen and (max-width: 24.375em) {
-      .form__box {
+        width: 100%;
         padding: 2.5rem; } }
   .form__group:not(:last-child) {
     margin-bottom: 2.2rem; }
@@ -360,6 +361,9 @@
     .footer__bottom-left {
       text-transform: uppercase;
       letter-spacing: .2rem; }
+      @media only screen and (max-width: 24.375em) {
+        .footer__bottom-left {
+          margin-bottom: 1rem; } }
     .footer__bottom-right a {
       margin-left: 1rem; }
 
@@ -434,7 +438,7 @@ hr {
   display: inline-block; }
   @media only screen and (max-width: 40.625em) {
     .btn {
-      padding: 1.2rem 2rem; } }
+      padding: 1.5rem 2rem; } }
   .btn--primary:link, .btn--primary:visited {
     background-color: var(--color-grey-light-2);
     color: var(--color-grey-dark-5);
