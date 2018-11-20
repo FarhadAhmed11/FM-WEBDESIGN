@@ -31,6 +31,9 @@
   @media only screen and (orientation: portrait) and (min-width: 40.625em) {
     .header {
       height: 80vh; } }
+  @media only screen and (max-width: 26.25em) {
+    .header {
+      height: auto; } }
 
 .nav {
   background-color: var(--color-grey-light-1);
@@ -79,9 +82,6 @@
     @media only screen and (max-width: 26.25em) {
       .nav__list {
         margin-top: 3rem; } }
-    @media only screen and (max-width: 24.375em) {
-      .nav__list {
-        display: none; } }
   .nav__item {
     margin-left: 3rem; }
   .nav__link, .nav__link:link, .nav__link:visited {
@@ -99,6 +99,11 @@
   color: var(--color-grey-light-2);
   width: 100%;
   padding: 0 2rem; }
+  @media only screen and (max-width: 26.25em) {
+    .banner {
+      position: static;
+      transform: translateY(0);
+      padding: 0; } }
   .banner__container {
     max-width: 120rem;
     margin: 0 auto; }
@@ -110,7 +115,8 @@
     flex-direction: column; }
     @media only screen and (max-width: 56.25em) {
       .banner__box {
-        width: 100%; } }
+        width: 100%;
+        padding: 6rem 2rem; } }
   .banner__main {
     font-size: 3rem;
     text-transform: uppercase; }
