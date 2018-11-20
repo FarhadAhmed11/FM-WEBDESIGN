@@ -31,6 +31,9 @@
   @media only screen and (max-width: 56.25em) {
     .header {
       height: 70vh; } }
+  @media only screen and (max-width: 26.25em) {
+    .header {
+      height: auto; } }
 
 .nav {
   background-color: var(--color-grey-light-1);
@@ -191,7 +194,7 @@
 
 .growsales {
   height: 40rem;
-  width: 100%;
+  max-width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg-growsales-2.jpg);
   background-size: cover;
   color: var(--color-grey-light-2);
@@ -210,7 +213,7 @@
     transform: translateY(-50%); }
     @media only screen and (max-width: 26.25em) {
       .growsales__text {
-        width: 100%; } }
+        max-width: 100%; } }
 
 .customers {
   padding: 7rem 2rem;
@@ -395,8 +398,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   font-family: 'Montserrat', sans-serif;
-  background-color: var(--color-grey-light-1);
-  overflow: hidden; }
+  background-color: var(--color-grey-light-1); }
 
 #current {
   border: 2px solid var(--color-primary);
